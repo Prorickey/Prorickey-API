@@ -18,6 +18,15 @@ publishing {
             }
         }
     }
+    publications {
+        maven(MavenPublication) {
+            groupId 'xyz.prorickey'
+            artifactId 'api'
+            version '1.0.1'
+
+            from components.java
+        }
+    }
 }
 
 repositories {
